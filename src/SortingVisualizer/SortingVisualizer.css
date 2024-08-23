@@ -1,0 +1,96 @@
+.array-container {
+  width: 1000px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 60vh;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fbe9d0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.array-bar {
+  background-color: #244855;
+  margin: 0 1px;
+  transition: height 0.2s ease, background-color 0.2s ease;
+  flex-grow: 1;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #e64833;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #874f41;
+}
+
+button:active {
+  background-color: #244855;
+}
+
+.slider-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+input[type='range'] {
+  width: 80%;
+  margin: 10px 0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #244855;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+  background: #244855;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+input[type='range']::-ms-thumb {
+  background: #244855;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-color: #6ee7b7;
+  }
+  50% {
+    background-color: #244855;
+  }
+  100% {
+    background-color: #6ee7b7;
+  }
+}
+
+.wave {
+  animation: waveAnimation 1s ease-in-out;
+}

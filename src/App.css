@@ -1,38 +1,126 @@
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #d5bdaf, #7b9a9a);
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fbe9d0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scroll-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.scroll-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: #fbe9d0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #d5bdaf, #7b9a9a);
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fbe9d0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.scroll-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: #fbe9d0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 8px;
+  background: #fbe9d0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.scrollbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #244855;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scrollbar::-webkit-slider-thumb:active {
+  background: #874f41;
+}
+
+.scrollbar::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #244855;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scrollbar::-moz-range-thumb:active {
+  background: #874f41;
 }

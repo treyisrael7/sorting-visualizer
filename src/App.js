@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import SortingVisualizer from './SortingVisualizer/SortingVisualizer';
+import { useState } from 'react';
 
 function App() {
+  const [barCount, setBarCount] = useState(150);
+
+  const handleScrollChange = (event) => {
+    setBarCount(event.target.value);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="title-container">
+        <h1 className="title">Sorting Visualizer</h1>
+        <div className="scroll-container">
+          <div className="scroll-label">{barCount} Array Bars</div>
+          <div className="scrollbar-wrapper">
+            <input
+              type="range"
+              min="10"
+              max="450"
+              step="10"
+              value={barCount}
+              className="scrollbar"
+              id="barCountSlider"
+              onChange={handleScrollChange}
+            />
+          </div>
+        </div>
+      </div>
+      <SortingVisualizer barCount={barCount} />
     </div>
   );
 }
