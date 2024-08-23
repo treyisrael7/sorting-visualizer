@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Sorting Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based sorting visualizer developed with React, JavaScript, and CSS. This tool allows users to visually explore and compare the performance of different sorting algorithms through dynamic and interactive animations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Algorithm Support**: Includes visualizations for 6 sorting algorithms:
 
-### `yarn start`
+  - Merge Sort
+  - Quick Sort
+  - Heap Sort
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Animation Speed**: Automatically adjusts animation speed from 2ms to 300ms based on the number of array bars to ensure smooth performance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interactive Bar Adjustment**: Users can modify the number of array bars (10 to 450) using a responsive scrollbar.
 
-### `yarn test`
+- **Customizable Color Scheme**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Primary Color: `#244855`
+  - Comparison Highlight: `#FFB200`
+  - Swap Highlight: `#874F41`
+  - Final Color: `#4CAF50`
 
-### `yarn build`
+- **Responsive Design**: Adapts to various screen sizes with bars adjusting their width according to the number of bars.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set up and run the Sorting Visualizer locally, follow these instructions:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the Repository**
+   ```bash
+    git clone https://github.com/yourusername/sorting-visualizer.git
+   ```
+2. **Navigate to the Project Directory**
+   cd sorting-visualizer
 
-### `yarn eject`
+3. **Install Dependencies**
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the Development Server**
+   npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Generate New Array**: Click the "Generate New Array" button to create a new array with random heights.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Sort Algorithms**: Choose one of the sorting algorithms from the control panel to see its visualization.
 
-## Learn More
+- **Adjust Bar Count**: Use the scrollbar to change the number of bars and observe the visual updates in real time.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request. Make sure to follow the project's coding style.
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Inspired by various sorting algorithm visualizers.
+Special thanks to the React community for their support and documentation.
