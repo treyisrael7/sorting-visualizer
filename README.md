@@ -32,7 +32,7 @@ To set up and run the Sorting Visualizer locally, follow these instructions:
 
 1. **Clone the Repository**
    ```bash
-    git clone https://github.com/yourusername/sorting-visualizer.git
+    git clone https://github.com/treyisrael7/sorting-visualizer.git
    ```
 2. **Navigate to the Project Directory**
    cd sorting-visualizer
